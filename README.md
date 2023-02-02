@@ -1,16 +1,13 @@
-### Hi there 👋
+## Bartosz Domarski - Junior Software Developer
 
-<!--
-**bartosz-domarski/bartosz-domarski** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Skills:
 
-Here are some ideas to get you started:
+<img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/csharp.jpg" width="120"/>    | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/python.jpg" width="120"/> | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/git.jpg" width="120"/>       | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/jira.jpg" width="120"/>    | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/selenium.jpg" width="120"/>
+--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------
+<img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/discord.jpg" width="120"/>   | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/mysql.jpg" width="120"/>  | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/photoshop.jpg" width="120"/> | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/windows.jpg" width="120"/> | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/linux.jpg" width="120"/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Contact:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bartosz-domarski-146ba8263)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bartek.domarski@gmail.com)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/370246868195868674)
