@@ -1,4 +1,4 @@
-##### The vBetFinder.com project is private and not available for viewing. Below is a description of how the software works and the libraries used in it.
+##### The vBetFinder.com project is private and the source code is not available for viewing. Below is a description of how the software works and the libraries used in it.
 
 ## vBetFinder.com - Scanner for valuebets, surebets, and system bets for over 40 bookmakers worldwide on Discord.
 ### This scanner searches for:
