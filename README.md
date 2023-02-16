@@ -8,8 +8,8 @@
 ##### The scanner has been programmed to meet strict mathematical requirements so that every given bet is profitable. The software is constantly being improved and new features are being added.
 
 
-<img src="img/vbf1.jpg" alt= “vbf1” width="500" height="333">            <img src="img/vbf2.jpg" alt= “vbf2” width="500" height="333">
-<img src="img/vbf3.jpg" alt= “vbf3” width="500" height="333">            <img src="img/vbf4.jpg" alt= “vbf4” width="500" height="333">
+<img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf1.jpg" alt= “vbf1” width="500" height="333">            <img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf2.jpg" alt= “vbf2” width="500" height="333">
+<img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf3.jpg" alt= “vbf3” width="500" height="333">            <img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf4.jpg" alt= “vbf4” width="500" height="333">
 
 #### You can find the Discord server of the scanner at this link, but remember that you need the appropriate role to access it and view the bets: https://discord.gg/BqACsEtPxh
 
