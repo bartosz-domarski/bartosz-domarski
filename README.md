@@ -1,13 +1,28 @@
-## Bartosz Domarski - Junior Software Developer
+## vBetFinder.com - Scanner for valuebets, surebets, and system bets for over 40 bookmakers worldwide on Discord.
+### This scanner searches for:
 
-### Skills:
+- **Valuebets** - bets for which the expected value of the winnings is greater than 1, which means that they are profitable in the long run.
+- **Surebets** - bets that are always profitable regardless of the outcome.
+- **System bets** - bets based on specific betting systems.
 
-<img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/csharp.jpg" width="120"/>    | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/python.jpg" width="120"/> | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/git.jpg" width="120"/>       | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/jira.jpg" width="120"/>    | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/selenium.jpg" width="120"/>
---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------
-<img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/discord.jpg" width="120"/>   | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/mysql.jpg" width="120"/>  | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/photoshop.jpg" width="120"/> | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/windows.jpg" width="120"/> | <img src="https://github.com/bartosz-domarski/bartosz-domarski/blob/main/img/linux.jpg" width="120"/>
+##### The scanner has been programmed to meet strict mathematical requirements so that every given bet is profitable. The software is constantly being improved and new features are being added.
 
-## Contact:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bartosz-domarski-146ba8263)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bartek.domarski@gmail.com)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/370246868195868674)
+<img src="img/vbf1.jpg" alt= “vbf1” width="500" height="333">            <img src="img/vbf2.jpg" alt= “vbf2” width="500" height="333">
+<img src="img/vbf3.jpg" alt= “vbf3” width="500" height="333">            <img src="img/vbf4.jpg" alt= “vbf4” width="500" height="333">
+
+#### You can find the Discord server of the scanner at this link, but remember that you need the appropriate role to access it and view the bets: https://discord.gg/BqACsEtPxh
+
+#### Technologies and libraries used in the project:
+- C# / .NET
+- Python
+- Selenium
+- Scrapy
+- Watchdog
+- Schedule
+- Concurrent Futures
+- JSON
+- LINQ
+- Discord
+
+##### There are plans to create a website under the titular domain and a dedicated mobile application.
