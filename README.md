@@ -1,5 +1,5 @@
 # Contacts Application
-## RESTful Web API .NET 6.0 + EF 7 + Postgresql 15 + Angular 15 SPA
+## RESTful Web API ASP.NET CORE 6.0 + EF 7 + Postgresql 15 + Angular 15 SPA
 ### Description:
 
 #### The ContactController is responsible for managing contact data. It contains five methods:
