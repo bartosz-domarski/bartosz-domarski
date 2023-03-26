@@ -1,0 +1,76 @@
+<div class="container">
+    <h1>Update contact</h1>
+    <form #form="ngForm" (ngSubmit)="updateContact()">
+        <div class="form-group row">
+            <label for="inputId3" class="col-sm-2 col-form-label">Id</label>
+            <div class="col-sm-10">
+                <input type="id" class="form-control" id="inpuId3" placeholder="Id" readonly name="id"
+                    [(ngModel)]="contact.id">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputFirstName3" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="firstname" class="form-control" id="inpuFirstName3" placeholder="First name" readonly
+                    name="firstName" [(ngModel)]="contact.firstName">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputLastName3" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="lastname" class="form-control" id="inputLastName3" placeholder="Last name" readonly
+                    name="lastName" [(ngModel)]="contact.lastName">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email"
+                    [(ngModel)]="contact.email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputDateOfBirth3" class="col-sm-2 col-form-label">Date of Birth</label>
+            <div class="col-sm-10">
+                <input type="dateofbirth" class="form-control" id="inputDateOfBirth3" placeholder="Date of birth"
+                    readonly name="dateOfBirth" [(ngModel)]="contact.dateOfBirth">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" readonly
+                    name="password" [(ngModel)]="contact.password">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPhone3" class="col-sm-2 col-form-label">Phone Number</label>
+            <div class="col-sm-10">
+                <input type="phone" class="form-control" id="inputPhone3" placeholder="Phone" name="phone"
+                    [(ngModel)]="contact.phone">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputCategory3" class="col-sm-2 col-form-label">Category</label>
+            <div class="col-sm-10">
+                <input type="category" class="form-control" id="inputCategory3" placeholder="Category" readonly
+                    name="category" [(ngModel)]="contact.category">
+            </div>
+        </div>
+        <div class="form-group row" *ngIf="contact.subcategory !== ''">
+            <label for="inputSubcategory3" class="col-sm-2 col-form-label">Subcategory</label>
+            <div class="col-sm-10">
+                <input type="subcategory" class="form-control" id="inputSubcategory3" placeholder="Subcategory" readonly
+                    name="subcategory" [(ngModel)]="contact.subcategory">
+            </div>
+        </div>
+
+        <div>
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Update contact</button>
+                <button type="button" class="btn btn-danger" (click)="deleteContact(contact.id)">Delete contact</button>
+                <strong *ngIf="errorMessage">Warning!</strong> {{errorMessage | json}}
+            </div>
+        </div>
+    </form>
+</div>

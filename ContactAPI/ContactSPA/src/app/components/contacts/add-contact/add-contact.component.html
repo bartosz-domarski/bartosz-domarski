@@ -1,0 +1,84 @@
+<div class="container">
+    <h1>Add new contact</h1>
+<form #form="ngForm" (ngSubmit)="createContact()">
+    <div class="form-group row">
+        <label for="inputFirstName3" class="col-sm-2 col-form-label">First Name</label>
+        <div class="col-sm-10">
+        <input type="firstname" class="form-control" id="inpuFirstName3" placeholder="First name" 
+        name="firstName" [(ngModel)]="createContactRequest.firstName">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputLastName3" class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-10">
+        <input type="lastname" class="form-control" id="inputLastName3" placeholder="Last name"
+        name="lastName"[(ngModel)]="createContactRequest.lastName">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email"
+        name="email" [(ngModel)]="createContactRequest.email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputDateOfBirth3" class="col-sm-2 col-form-label">Date of Birth</label>
+        <div class="col-sm-10">
+        <input type="dateofbirth" class="form-control" id="inputDateOfBirth3" placeholder="Date of birth"
+        name="dateOfBirth" [(ngModel)]="createContactRequest.dateOfBirth">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password"
+        name="password" [(ngModel)]="createContactRequest.password">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPhone3" class="col-sm-2 col-form-label">Phone Number</label>
+        <div class="col-sm-10">
+        <input type="phone" class="form-control" id="inputPhone3" placeholder="Phone"
+        name="phone" [(ngModel)]="createContactRequest.phone">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="inputCategory3" class="col-sm-2 col-form-label">Category</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="inputCategory3" name="category" [(ngModel)]="category" 
+            [(ngModel)]="createContactRequest.category">
+                <option value="Private">Private</option>
+                <option value="Business">Business</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row" *ngIf="category === 'Business'">
+        <label for="inputSubcategory3" class="col-sm-2 col-form-label">Subcategory</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="inputSubcategory3" name="subcategory" [(ngModel)]="subcategory"
+            [(ngModel)]="createContactRequest.subcategory">
+                <option value="Client">Client</option>
+                <option value="Boss">Boss</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row" *ngIf="category === 'Other'">
+        <label for="inputCustomCategory3" class="col-sm-2 col-form-label">Custom Category</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputCustomCategory3" name="category"
+            placeholder="Custom category" [(ngModel)]="createContactRequest.category">
+        </div>
+    </div>
+    
+    <div>
+        <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Add contact</button>
+        <strong *ngIf="errorMessage">Warning!</strong> {{errorMessage | json}}
+        </div>
+    </div>
+    </form>
+</div>

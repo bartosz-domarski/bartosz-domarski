@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>Contacts</h1>
+<table class="table" *ngIf="contacts && contacts.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th *ngIf="showEmail" scope="col">Email</th>
+        <th *ngIf="showDateOfBirth" scope="col">Date Of Birth</th>
+        <th scope="col">Phone Number</th>
+        <th *ngIf="showPassword" scope="col">Password</th>
+        <th scope="col">Category</th>
+        <th scope="col">Subcategory</th>
+        <th> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td>{{ contact.id }}</td>
+        <td>{{ contact.firstName }}</td>
+        <td>{{ contact.lastName }}</td>
+        <td *ngIf="showEmail">{{ contact.email }}</td>
+        <td *ngIf="showDateOfBirth">{{ contact.dateOfBirth }}</td>
+        <td>{{ contact.phone }}</td>
+        <td *ngIf="showPassword">{{ contact.password }}</td>
+        <td>{{ contact.category }}</td>
+        <td>{{ contact.subcategory }}</td>
+        <td *ngIf="isLoggedIn()"><a routerLink="/contacts/update/{{contact.id}}">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="!contacts || contacts.length <= 0">No contacts found</p>
+</div>

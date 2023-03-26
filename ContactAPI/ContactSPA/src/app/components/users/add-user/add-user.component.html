@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Register new account</h1>
+    <form #form="ngForm" (ngSubmit)="registerUser()">
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+            name="email" [(ngModel)]="register.email">
+        </div>
+        <div class="mb-3">
+            <label for="inputFirstName" class="form-label">Fire Name</label>
+            <input type="firstname" class="form-control" id="inputFirstName"
+            name="firstName" [(ngModel)]="register.firstName">
+        </div>
+        <div class="mb-3">
+            <label for="inputLastName" class="form-label">Last Name</label>
+            <input type="lastname" class="form-control" id="inputLastName"
+            name="lastName" [(ngModel)]="register.lastName">
+        </div>
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword"
+            name="password" [(ngModel)]="register.password">
+        </div>
+        <div class="mb-3">
+            <label for="inputConfirmPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="inputConfirmPassword"
+            name="confirmPassword" [(ngModel)]="register.confirmPassword">
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <strong *ngIf="errorMessage">Warning!</strong> {{errorMessage | json}}
+    </form>
+</div>
