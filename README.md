@@ -1,3 +1,46 @@
+# Contacts Application
+## RESTful Web API ASP.NET CORE 6.0 + EF 7 + Postgresql 15 + Angular 15 SPA
+### Description:
+
+#### The ContactController is responsible for managing contact data. It contains five methods:
+
+- **GetAll** - returns a list of all contacts as a list of ContactDto.
+- **GetById** - returns a contact with the specified id as a ContactDto.
+- **Create** - creates a new contact based on the passed CreateContactDto object and returns a 201 code with the location of the created resource.
+- **Update** - updates an existing contact with the specified id based on the passed UpdateContactDto object and returns a 200 code.
+- **Delete** - deletes an existing contact with the specified id.
+
+#### The AccountController is responsible for user login and registration. It contains two methods:
+
+- **Register** - creates a new user based on the passed RegisterUserDto object and returns a 200 code.
+- **Login** - logs in a user based on the passed LoginDto object and returns a JWT token as a JSON object.
+
+## Libraries used:
+
+- FluentValidation
+- FluentValidation.AspNetCore
+- Microsoft.AspNetCore.Identity
+- Microsoft.EntityFrameworkCore
+- Microsoft.IdentityModel.Tokens
+- Microsoft.AspNetCore.Authentication.JwtBearer
+- Microsoft.AspNetCore.Mvc.NewtonsoftJson
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.Extensions.Configuration.Binder
+- Microsoft.Extensions.Configuration.FileExtensions
+- Microsoft.Extensions.Configuration.Json
+- Microsoft.VisualStudio.Web.CodeGeneration.Design
+- Npgsql.EntityFrameworkCore.PostgreSQL
+- Swashbuckle.AspNetCore
+
+#### The API runs at the address: https://localhost:7209. The SPA runs at the address: http://localhost:4200.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ##### The vBetFinder.com project is private and the source code is not available for viewing. Below is a description of how the software works and the libraries used in it.
 
 ## vBetFinder.com - Scanner for valuebets, surebets, and system bets for over 40 bookmakers worldwide on Discord.
