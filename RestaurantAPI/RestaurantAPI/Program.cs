@@ -13,8 +13,11 @@ using RestaurantAPI.Models.Validators;
 using RestaurantAPI.Services;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Unicode;
+
+[assembly: InternalsVisibleTo("RestaurantAPI.IntegrationTests")]
 
 var builder = WebApplication.CreateBuilder(args);
 

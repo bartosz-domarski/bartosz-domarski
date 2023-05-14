@@ -24,6 +24,7 @@ namespace RestaurantAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public ActionResult<IEnumerable<RestaurantDto>> GetAll([FromQuery]RestaurantQuery query)
         {
             var restaurantsDto = _service.GetAll(query);

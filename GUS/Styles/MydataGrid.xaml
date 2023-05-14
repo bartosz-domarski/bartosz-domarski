@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="DataGridRow">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding LevelName}" Value="Temat">
+                <Setter Property="Background" Value="Green"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding LevelName}" Value="Zakres informacyjny">
+                <Setter Property="Background" Value="Red"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding LevelName}" Value="Dziedzina">
+                <Setter Property="Background" Value="Yellow"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
