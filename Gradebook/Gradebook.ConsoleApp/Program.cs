@@ -4,13 +4,14 @@ using Gradebook.ConsoleApp.Persistence;
 using Gradebook.ConsoleApp.Repositories;
 using Gradebook.ConsoleApp.Services;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 var services = new ServiceCollection();
 services.AddSingleton<IApp, App>();
+services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 services.AddDbContext<IGradebookDbContext, GradebookDbContext>();
 services.AddSingleton<IGradebookRepository, GradebookRepository>();
-services.AddSingleton<IGradebookService, GradebookService>();
-services.AddSingleton<IClientInterfaceService, ClientInterfaceService>();
+services.AddSingleton<IClientManagerService, ClientManagerService>();
 services.AddSingleton<INotification, Notification>();
 services.AddSingleton<INotificationPublisher, NotificationPublisher>();
 services.AddSingleton<Seeder>();
@@ -21,4 +22,4 @@ var app = serviceProvider.GetRequiredService<IApp>();
 var seeder = serviceProvider.GetRequiredService<Seeder>();
 seeder.Seed();
 
-app.Run();
+await app.Run();

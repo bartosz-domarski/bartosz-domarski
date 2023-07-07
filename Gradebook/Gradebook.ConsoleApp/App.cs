@@ -5,59 +5,59 @@ namespace Gradebook.ConsoleApp
 {
     public class App : IApp
     {
-        private readonly IClientInterfaceService _clientInterfaceService;
+        private readonly IClientManagerService _clientManagerService;
         private readonly INotification _notification;
         private readonly INotificationPublisher _publisher;
 
-        public App(IClientInterfaceService clientInterfaceService, INotification notification, INotificationPublisher publisher)
+        public App(IClientManagerService clientManagerService, INotification notification, INotificationPublisher publisher)
         {
-            _clientInterfaceService = clientInterfaceService;
+            _clientManagerService = clientManagerService;
             _notification = notification;
             _publisher = publisher;
         }
 
-        public void Run()
+        public async Task Run()
         {
             _publisher.Subscribe(_notification);
 
             while (true)
             {
                 Console.Clear();
+                
+                var choice = _clientManagerService.GetChoice();
 
-                var option = ClientInterfaceService.GetOption();
-
-                switch (option)
+                switch (choice)
                 {
                     case "Add gradebook":
-                        _clientInterfaceService.AddGradebook();
+                        await _clientManagerService.AddGradebook();
                         break;
 
                     case "Add grade":
-                        _clientInterfaceService.AddGrade();
+                        await _clientManagerService.AddGrade();
                         break;
 
                     case "Display gradebooks":
-                        _clientInterfaceService.PrintAllGradebooks();
+                        await _clientManagerService.PrintAllGradebooks();
                         break;
 
                     case "Display student's grades":
-                        _clientInterfaceService.PrintAllGradesByStudentName();
+                        await _clientManagerService.PrintAllGradesByStudentName();
                         break;
 
                     case "Display student's gradebook details":
-                        _clientInterfaceService.PrintGradebookDetails();
+                        await _clientManagerService.PrintGradebookDetails();
                         break;
 
                     case "Display student's grade details by subject":
-                        _clientInterfaceService.PrintGradeDetailsBySubject();
+                        await _clientManagerService.PrintGradeDetailsBySubject();
                         break;
 
                     case "Remove gradebook":
-                        _clientInterfaceService.DeleteGradebook();
+                        await _clientManagerService.DeleteGradebook();
                         break;
 
                     case "Remove grade":
-                        _clientInterfaceService.DeleteGrade();
+                        await _clientManagerService.DeleteGrade();
                         break;
 
                     case "Exit":
@@ -65,7 +65,7 @@ namespace Gradebook.ConsoleApp
                         break;
 
                     default:
-                        throw new Exception($"Option {option} is not handled");
+                        throw new Exception($"Option {choice} is not handled");
                 }
             }
         }

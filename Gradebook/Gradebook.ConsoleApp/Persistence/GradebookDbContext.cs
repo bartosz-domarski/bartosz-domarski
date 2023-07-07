@@ -1,5 +1,6 @@
 ﻿using Gradebook.ConsoleApp.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.CompilerServices;
 
 namespace Gradebook.ConsoleApp.Persistence
 {
@@ -35,7 +36,7 @@ namespace Gradebook.ConsoleApp.Persistence
             }
         }
 
-        void IGradebookDbContext.SaveChanges() =>
-            base.SaveChanges();
+        async Task IGradebookDbContext.SaveChanges() =>
+            await base.SaveChangesAsync();
     }
 }

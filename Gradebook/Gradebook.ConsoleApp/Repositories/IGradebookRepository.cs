@@ -4,11 +4,11 @@ namespace Gradebook.ConsoleApp.Repositories
 {
     public interface IGradebookRepository
     {
-        void AddGradebook(Entities.Gradebook gradebook);
-        void AddGrade(Entities.Gradebook gradebook, Grade grade);
-        List<Entities.Gradebook> GetAllGradebooks();
-        Entities.Gradebook GetGradebook(string studentName);
-        void DeleteGradebook(Entities.Gradebook gradebook);
-        void DeleteGrade(Entities.Gradebook gradebook, Grade grade);
+        Task AddGradebook(Entities.Gradebook gradebook);
+        Task AddGrade(Entities.Gradebook gradebook, Grade grade);
+        Task<IEnumerable<Entities.Gradebook>> GetAllGradebooks();
+        Task<Entities.Gradebook> GetGradebook(string studentName);
+        Task DeleteGradebook(Entities.Gradebook gradebook);
+        Task DeleteGrade(Entities.Gradebook gradebook, Grade grade);
     }
 }

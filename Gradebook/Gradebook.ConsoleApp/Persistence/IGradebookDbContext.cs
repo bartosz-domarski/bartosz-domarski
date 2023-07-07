@@ -8,6 +8,6 @@ namespace Gradebook.ConsoleApp.Persistence
         DbSet<Entities.Gradebook> Gradebooks { get; set; }
         DbSet<Grade> Grades { get; set; }
         DbSet<Student> Students { get; set; }
-        void SaveChanges();
+        Task SaveChanges();
     }
 }

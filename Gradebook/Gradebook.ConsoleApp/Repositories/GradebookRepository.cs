@@ -13,34 +13,42 @@ namespace Gradebook.ConsoleApp.Repositories
             _dbContext = dbContext;
         }
 
-        public void AddGradebook(Entities.Gradebook gradebook)
+        public Task AddGradebook(Entities.Gradebook gradebook)
         {
             _dbContext.Gradebooks.Add(gradebook);
             _dbContext.SaveChanges();
+
+            return Task.CompletedTask;
         }
 
-        public void AddGrade(Entities.Gradebook gradebook, Grade grade)
+        public Task AddGrade(Entities.Gradebook gradebook, Grade grade)
         {
             gradebook.Grades.Add(grade);
             _dbContext.SaveChanges();
+
+            return Task.CompletedTask;
         }
 
-        public Entities.Gradebook GetGradebook(string studentName) =>
-            _dbContext.Gradebooks.FirstOrDefault(x => x.Student.Name == studentName)!;
+        public async Task<Entities.Gradebook> GetGradebook(string studentName) =>
+            (await _dbContext.Gradebooks.FirstOrDefaultAsync(x => x.Student.Name == studentName))!;
 
-        public List<Entities.Gradebook> GetAllGradebooks() =>
-            _dbContext.Gradebooks.Include(x => x.Student).Include(x => x.Grades).ToList();
+        public async Task<IEnumerable<Entities.Gradebook>> GetAllGradebooks() =>
+            await _dbContext.Gradebooks.Include(x => x.Student).Include(x => x.Grades).ToListAsync();
 
-        public void DeleteGradebook(Entities.Gradebook gradebook)
+        public Task DeleteGradebook(Entities.Gradebook gradebook)
         {
             _dbContext.Gradebooks.Remove(gradebook);
             _dbContext.SaveChanges();
+
+            return Task.CompletedTask;
         }
 
-        public void DeleteGrade(Entities.Gradebook gradebook, Grade grade)
+        public Task DeleteGrade(Entities.Gradebook gradebook, Grade grade)
         {
             gradebook.Grades.Remove(grade);
             _dbContext.SaveChanges();
+
+            return Task.CompletedTask;
         }
     }
 }
