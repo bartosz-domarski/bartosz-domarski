@@ -1,73 +1,47 @@
-# Contacts Application
-## RESTful Web API ASP.NET CORE 6.0 + EF 7 + Postgresql 15 + Angular 15 SPA
+# Commercial Projects
+## FiberFresh - Upholstery Cleaning Services
 ### Description:
 
-#### The ContactController is responsible for managing contact data. It contains five methods:
+This .NET MVC project based on the CLEAN architecture. Is hosted on the Azure AppService platform. Access to the app is available at fiberfresh.azurewebsites.net.
 
-- **GetAll** - returns a list of all contacts as a list of ContactDto.
-- **GetById** - returns a contact with the specified id as a ContactDto.
-- **Create** - creates a new contact based on the passed CreateContactDto object and returns a 201 code with the location of the created resource.
-- **Update** - updates an existing contact with the specified id based on the passed UpdateContactDto object and returns a 200 code.
-- **Delete** - deletes an existing contact with the specified id.
+It utilizes Blob Storage and Key Vault services. The application enables the reservation system of upholstery cleaning services and includes an administrator panel for managing reservations and service schedules. Additionally, it features a contact form. 
 
-#### The AccountController is responsible for user login and registration. It contains two methods:
-
-- **Register** - creates a new user based on the passed RegisterUserDto object and returns a 200 code.
-- **Login** - logs in a user based on the passed LoginDto object and returns a JWT token as a JSON object.
-
-## Libraries used:
-
-- FluentValidation
-- FluentValidation.AspNetCore
-- Microsoft.AspNetCore.Identity
-- Microsoft.EntityFrameworkCore
-- Microsoft.IdentityModel.Tokens
-- Microsoft.AspNetCore.Authentication.JwtBearer
-- Microsoft.AspNetCore.Mvc.NewtonsoftJson
-- Microsoft.EntityFrameworkCore.Design
-- Microsoft.EntityFrameworkCore.Tools
-- Microsoft.Extensions.Configuration.Binder
-- Microsoft.Extensions.Configuration.FileExtensions
-- Microsoft.Extensions.Configuration.Json
-- Microsoft.VisualStudio.Web.CodeGeneration.Design
-- Npgsql.EntityFrameworkCore.PostgreSQL
-- Swashbuckle.AspNetCore
-
-#### The API runs at the address: https://localhost:7209. The SPA runs at the address: http://localhost:4200.
-
+The project uses a PostgreSQL database and the Entity Framework Core for managing the database connection. The application also utilizes an Identity-based login mechanism and object-relational mapping through the AutoMapper library. The project also includes a seeder.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# Projects
 
-##### The vBetFinder.com project is private and the source code is not available for viewing. Below is a description of how the software works and the libraries used in it.
+## Gradebook Console Application
+The "Gradebook" is a console application developed in C# using the .NET 7.0 platform. Its purpose is to enable users to manage and grade assignments within an educational context.
 
-## vBetFinder.com - Scanner for valuebets, surebets, and system bets for over 40 bookmakers worldwide on Discord.
-### This scanner searches for:
+The application utilizes Microsoft SQL Server as the backend database ensuring reliability, scalability, and security. It leverages Entity Framework as an Object-Relational Mapping (ORM) tool and data access framework.
 
-- **Valuebets** - bets for which the expected value of the winnings is greater than 1, which means that they are profitable in the long run.
-- **Surebets** - bets that are always profitable regardless of the outcome.
-- **System bets** - bets based on specific betting systems.
+The application is built upon several design patterns. It employs Dependency Injection to handle component dependencies, facilitating easier testing and maintenance. The Repository pattern provides an abstraction layer between the application and the database, enabling convenient CRUD operations on data. The Strategy pattern is used to implement various grading strategies, allowing flexible customization of calculation methods based on user preferences. The Observer pattern is utilized to implement notifications, enabling subscription and receipt of notifications for successful task completion and errors.
 
-#### The scanner has been programmed to meet strict mathematical requirements so that every given bet is profitable. The software is constantly being improved and new features are being added.
+The application utilizes the xUnit library for unit testing, ensuring code quality and reliability. For console-based user interaction, it employs the Spectre Console library, which provides rich formatting and interactive features.
+
+Additionally, the application utilizes the Toast Notifications library to generate system-level notifications, displaying user-friendly notifications to the user.
+
+The Gradebook application showcases programming skills in C#, the .NET platform, database management, implementation of design patterns, and unit testing.
 
 
-<img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf1.jpg" alt= “vbf1” width="500" height="333">            <img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf2.jpg" alt= “vbf2” width="500" height="333">
-<img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf3.jpg" alt= “vbf3” width="500" height="333">            <img src="https://github.com/bartosz-domarski/vbetfinder.com/blob/main/img/vbf4.jpg" alt= “vbf4” width="500" height="333">
+#### Summary:
+- .NET 7.0
+- MSSQL
+- xUnit
 
-#### You can find the Discord server of the scanner at this link, but remember that you need the appropriate role to access it and view the bets: https://discord.gg/BqACsEtPxh
+#### Patterns:
+- Dependency injection
+- Repository
+- Strategy
+- Observer
+- CQRS
 
-#### Technologies and libraries used in the project:
-- C# / .NET
-- Python
-- Selenium
-- Scrapy
-- Watchdog
-- Schedule
-- Concurrent Futures
-- JSON
-- LINQ
-- Discord
-
-#### There are plans to create a website under the titular domain and a dedicated mobile application.
+#### Libraries:
+- Entity Framework
+- Spectre Console
+- MediatR
+- Toast Notifications
