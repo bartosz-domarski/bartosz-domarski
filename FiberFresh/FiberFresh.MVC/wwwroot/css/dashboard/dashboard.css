@@ -1,0 +1,122 @@
+﻿.u-section-1 {
+    background: rgba(0, 0, 0, 0.35);
+    background-image: url("/images/background.webp");
+    background-blend-mode: darken;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+    .u-section-1 .u-sheet-1 {
+        min-height: 725px;
+    }
+
+    .u-section-1 .u-group-elements-1 {
+        width: 160px;
+        min-height: 208px;
+        height: auto;
+        margin: 40px auto 0 50px;
+    }
+
+    .u-section-1 .u-image-1 {
+        height: auto;
+        background-image: url("/images/logo.jpg");
+        background-position: 50% 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .u-section-1 .u-text-1 {
+        font-size: 1.875rem;
+        margin: 0;
+    }
+
+@media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 358px;
+    }
+
+    .u-section-1 .u-image-1 {
+        width: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 274px;
+    }
+}
+
+@media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 206px;
+    }
+
+    .u-section-1 .u-text-1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+        min-height: 130px;
+    }
+}
+/*///////////////////////*/
+
+
+
+
+
+.container {
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+    .container .btn {
+        width: 100%;
+    }
+
+.table-layout {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: arial-narrow, helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0 auto 0;
+    margin-bottom: 20px;
+    height: 100px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+    .table-layout .clickedrow td {
+        background-color: #caaf8f;
+    }
+
+    .table-layout td,
+    .table-layout th {
+        border: 1px solid grey;
+        padding: 3px 3px 0;
+        height: 20px;
+        line-height: 20px;
+        width: 100px;
+    }
+
+    .table-layout td {
+        text-align: left;
+        background-color: #fff;
+    }
+
+    .table-layout th {
+        background-color: #eea647;
+        height: 22px;
+        line-height: 22px;
+    }
+
+    .table-layout.clickedrow td {
+        background-color: #caaf8f;
+    }
