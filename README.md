@@ -2,11 +2,11 @@
 ## FiberFresh - Upholstery Cleaning Services
 ### Description:
 
-This .NET MVC project based on the CLEAN architecture. Is hosted on the Azure AppService platform. Access to the app is available at [fiberfresh.azurewebsites.net](https://fiberfresh.azurewebsites.net/).
+This .NET MVC project based on the CLEAN architecture. Is hosted on the ASP.NET hosting platform. Access to the app is available at [panmariusz.pl](https://www.panmariusz.pl/).
 
-It utilizes Blob Storage and Key Vault services. The application enables the reservation system of upholstery cleaning services and includes an administrator panel for managing reservations and service schedules. Additionally, it features a contact form. 
+The application enables the reservation system of upholstery cleaning services and includes an administrator panel for managing reservations and service schedules. Additionally, it features a contact form. 
 
-The project uses a PostgreSQL database and the Entity Framework Core for managing the database connection. The application also utilizes an Identity-based login mechanism and object-relational mapping through the AutoMapper library. The project also includes a seeder.
+The project uses a MSSQL database and the Entity Framework Core for managing the database connection. The application also utilizes an Identity-based login mechanism and object-relational mapping through the AutoMapper library. The project also includes a seeder.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
